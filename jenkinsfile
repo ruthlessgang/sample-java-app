@@ -1,0 +1,25 @@
+pipeline {
+agent any 
+
+stages {
+stage("Build") {
+
+steps {
+ echo 'My first Echo'
+}
+}
+
+stage("sleep") {
+steps {
+
+sleep 30
+}
+}
+
+stage("deploy") {
+steps {
+echo 'deploying the application..'
+}
+}
+}
+}
